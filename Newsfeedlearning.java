@@ -21,9 +21,9 @@ public class Newsfeedlearning {
   // main method
   public static void main(String[] args){
     Newsfeedlearning sampleFeed = new Newsfeedlearning();
-    /*
+    
     String[] topics = sampleFeed.getTopics();
     System.out.println(topics);
-    */
+    
   }
 }
