@@ -20,8 +20,10 @@ public class Newsfeedlearning {
 
   // main method
   public static void main(String[] args){
+    // create a new instance of Newfeedlearning
     Newsfeedlearning sampleFeed = new Newsfeedlearning();
     
+    // call the getTopics method on our new instance of Newsfeedlearning
     String[] topics = sampleFeed.getTopics();
     System.out.println(topics);
     
