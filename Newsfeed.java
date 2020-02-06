@@ -36,14 +36,22 @@ public class Newsfeed {
   
   // main method
   public static void main(String[] args){
+    // populate String array of Articles
     String[] robotArticles = {"Oil News", "Innovative Motors", "Humans: Exterminate Or Not?", "Organic Eye Implants", "Path Finding in an Unknown World"};
+    // populate int array of views
     int[] robotViewers = {87, 32, 13, 11, 7};
+    // populate double array of ratings
     double[] robotRatings = {2.5, 3.2, 5.0, 1.7, 4.3};
+    // uses constructor
     Newsfeed robotTimes = new Newsfeed(robotArticles, robotViewers, robotRatings);
     
+    // calls the constructor
     robotTimes.viewArticle(2);
+    // calls the constructor again
     robotTimes.viewArticle(2);
+    // print calls the getTopArticle method
     System.out.println("The top article is " + robotTimes.getTopArticle());
+    // calls the changeRating method
     robotTimes.changeRating(3, 5);
   }
 }
