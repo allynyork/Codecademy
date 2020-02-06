@@ -1,5 +1,6 @@
 public class Newsfeed {
   
+  // arrays
   String[] trendingArticles;
   int[] views;
   double[] ratings;
