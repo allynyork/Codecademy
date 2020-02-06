@@ -53,5 +53,15 @@ public class Newsfeed {
     System.out.println("The top article is " + robotTimes.getTopArticle());
     // calls the changeRating method
     robotTimes.changeRating(3, 5);
+
+
+    // let's see if i can make use of this myself to better understand what's going on here
+    // first were going to populate our arrays for three articles with their views and ratings
+    String[] octopusArticles = {"Eight Legs == good", "Boneless is better", "Sharpen your beak"};
+    int[] octopusViews = {42, 11, 8};
+    double[] octopusRating = {4.9, 2.3, 3.5};
+    // instantiate a new object using our constructor
+    Newsfeed octopusLife = new Newsfeed(octopusArticles, octopusViews, octopusRating);
+    // fantastic, everything up to this comment compiles
   }
 }
