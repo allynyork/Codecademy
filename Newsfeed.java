@@ -62,6 +62,8 @@ public class Newsfeed {
     double[] octopusRating = {4.9, 2.3, 3.5};
     // instantiate a new object using our constructor
     Newsfeed octopusLife = new Newsfeed(octopusArticles, octopusViews, octopusRating);
-    // fantastic, everything up to this comment compiles
+    // fantastic! everything up to this comment compiles
+    // now to use our Octopus object
+    
   }
 }
