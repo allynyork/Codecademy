@@ -64,6 +64,8 @@ public class Newsfeed {
     Newsfeed octopusLife = new Newsfeed(octopusArticles, octopusViews, octopusRating);
     // fantastic! everything up to this comment compiles
     // now to use our Octopus object
-    
+    octopusLife.viewArticle(0);
+    octopusLife.viewArticle(1);
+    octopusLife.viewArticle(2);
   }
 }
