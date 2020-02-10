@@ -53,6 +53,12 @@ public class Newsfeed {
     System.out.println("The top article is " + robotTimes.getTopArticle());
     // calls the changeRating method
     robotTimes.changeRating(3, 5);
+    System.out.println("");
+    System.out.println("and thus ends the premade lesson");
+    System.out.println("");
+    System.out.println("");
+    System.out.println("now to try and create my own");
+    System.out.println("");
 
 
     // let's see if i can make use of this myself to better understand what's going on here
@@ -64,8 +70,11 @@ public class Newsfeed {
     Newsfeed octopusLife = new Newsfeed(octopusArticles, octopusViews, octopusRating);
     // fantastic! everything up to this comment compiles
     // now to use our Octopus object
+    System.out.println("what's going on in the wonderful world of octopods?");
+    System.out.println("");
     octopusLife.viewArticle(0);
     octopusLife.viewArticle(1);
     octopusLife.viewArticle(2);
+    System.out.println("");
   }
 }
