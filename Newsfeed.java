@@ -45,9 +45,9 @@ public class Newsfeed {
     // uses constructor
     Newsfeed robotTimes = new Newsfeed(robotArticles, robotViewers, robotRatings);
     
-    // calls the constructor
+    // calls the View Article method
     robotTimes.viewArticle(2);
-    // calls the constructor again
+    // calls the View Article method again
     robotTimes.viewArticle(2);
     // print calls the getTopArticle method
     System.out.println("The top article is " + robotTimes.getTopArticle());
@@ -72,9 +72,14 @@ public class Newsfeed {
     // now to use our Octopus object
     System.out.println("what's going on in the wonderful world of octopods?");
     System.out.println("");
+    // call the viewArticle method on each of our three articles
     octopusLife.viewArticle(0);
     octopusLife.viewArticle(1);
     octopusLife.viewArticle(2);
+    // what is the top article in Octopus Life?
+    System.out.println("The top article is " + octopusLife.getTopArticle());
+    octopusLife.changeRating(2, 5);
+    // I need to deconstruct/study the Change Rating method to better understand 
     System.out.println("");
   }
 }
