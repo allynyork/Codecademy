@@ -15,7 +15,8 @@ public class Newsfeed {
   
   // getTopArticle method
   public String getTopArticle(){
-    return trendingArticles[0];
+    // currently this is hardcoded and has nothing to do with views or rating
+    return trendingArticles[1];
   }
   
   // viewArticle method
@@ -64,8 +65,8 @@ public class Newsfeed {
     // let's see if i can make use of this myself to better understand what's going on here
     // first were going to populate our arrays for three articles with their views and ratings
     String[] octopusArticles = {"Eight Legs == good", "Boneless is better", "Sharpen your beak"};
-    int[] octopusViews = {42, 11, 8};
-    double[] octopusRating = {4.9, 2.3, 3.5};
+    int[] octopusViews = {42, 11, 88};
+    double[] octopusRating = {2.8, 2.3, 3.9};
     // instantiate a new object using our constructor
     Newsfeed octopusLife = new Newsfeed(octopusArticles, octopusViews, octopusRating);
     // fantastic! everything up to this comment compiles
@@ -78,7 +79,7 @@ public class Newsfeed {
     octopusLife.viewArticle(2);
     // what is the top article in Octopus Life?
     System.out.println("The top article is " + octopusLife.getTopArticle());
-    octopusLife.changeRating(2, 5);
+    octopusLife.changeRating(2, 4);
     // I need to deconstruct/study the Change Rating method to better understand 
     System.out.println("");
   }
